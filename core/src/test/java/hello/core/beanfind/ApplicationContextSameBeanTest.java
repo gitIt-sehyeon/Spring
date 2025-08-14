@@ -25,6 +25,7 @@ public class ApplicationContextSameBeanTest {
         assertThrows(NoUniqueBeanDefinitionException.class,
                 () -> ac.getBean(MemberRepository.class));
     }
+    
     @Test
     @DisplayName("find by type, but there are beans have same type, then find by name")
     void findBeanByName(){
