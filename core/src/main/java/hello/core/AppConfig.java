@@ -13,7 +13,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
-    //Bean file test
     @Bean
     public MemberService memberService(){
         System.out.println("Call AppConfig.memberService");
